@@ -32,12 +32,13 @@ python3 worker.py --stream-url https://www.youtube.com/@Markets/live >> log.txt 
 You can monitor the stdout, the file you wrote to or `event.delta` in the code (edit [stream2whisper.py](stream2whisper.py))
 
 ### what is stream2whisper?
-it is a lightweight, high level yet low latency Python implementation that uses yt-dlp, ffmpeg and OpenAI `gpt-realtime-whisper` model for getting transcriptions of livestreams on [supported sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) such as YouTube, Twitch, Kick and more.
+it is a lightweight, high level yet low latency Python implementation that uses yt-dlp, ffmpeg and [OpenAI `gpt-realtime-whisper`](https://developers.openai.com/api/docs/models/gpt-realtime-whisper) model for getting transcriptions of livestreams on [supported sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) such as YouTube, Twitch, Kick and more.
 
 ### requirements
 - internet connection
 - `OPENAI_API_KEY`
 - `python3.11+`
+- $0.017 per minute of audio transcribed
 
 
 ### why?
